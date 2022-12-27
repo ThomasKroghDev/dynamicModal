@@ -1,1 +1,107 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Sevillana&display=swap");
+body {
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+  text-shadow: 0px 3px 0px #b2a98f, 0px 14px 10px rgba(0, 0, 0, 0.15);
+}
+
+main {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(242, 242, 242, 0.6862745098);
+  overflow: hidden;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.062);
+}
+
+h1 {
+  font-family: "Sevillana", cursive;
+}
+
+.btn {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-flex;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+.btn:hover, .btn:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+.btn:hover {
+  transform: translateY(-1px);
+}
+.btn:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  width: 600px;
+  background: #f2f2f2;
+  padding: 40px 15px;
+  z-index: 10;
+  border-radius: 0.25rem;
+}
+
+.closeContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+.closeContainer .closeBtn {
+  line-height: 0;
+  font-size: 5rem;
+}
+
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  z-index: 5;
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.521); /* Black background with opacity */
+  cursor: pointer; /* Add a pointer on hover */
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}/*# sourceMappingURL=style.css.map */
