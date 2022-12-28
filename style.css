@@ -104,4 +104,8 @@ h1 {
   cursor: pointer; /* Add a pointer on hover */
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
