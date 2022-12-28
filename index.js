@@ -7,13 +7,29 @@ const modalContent = document.querySelector('.modalContent');
 
 const closebtn = document.querySelector('.closeBtn');
 
+const modalDynamicContent = (index) => {
+  if (index === 0) {
+    return 'one';
+  } else if (index === 1) {
+    return 'two';
+  } else {
+    return 'three';
+  }
+};
+
 const toggle = () => {
   modal.classList.toggle('hidden');
   overlay.classList.toggle('hidden');
 };
 
 for (let i = 0; i < showModalbtns.length; i++) {
-  showModalbtns[i].addEventListener('click', toggle);
+  showModalbtns[i].addEventListener('click', () => {
+    modalHeader.textContent = `modal ${modalDynamicContent(i)}`;
+    modalContent.textContent = `this is the paragraph content of modal ${modalDynamicContent(
+      i
+    )}`;
+    toggle();
+  });
 }
 
 closebtn.addEventListener('click', toggle);
